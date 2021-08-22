@@ -1,0 +1,123 @@
+/*Colors*/
+ :root{
+    
+    /*Primary*/
+    --VeryDarkBlue: hsl(233, 47%, 7%); /* (main background) */
+    --DarkDesaturatedBlue: hsl(244, 38%, 16%); /*(card background)*/
+    --SoftViolet : hsl(277, 64%, 61%);/*(accent)*/
+    
+    /*Neutral*/
+    
+    --White : hsl(0, 0%, 100%);/*(main heading, stats)*/
+    --SlightlyTransparentWhiteMain : hsla(0, 0%, 100%, 0.75);/*(main paragraph)*/
+    --SlightlyTransparentWhite: hsla(0, 0%, 100%, 0.6);/* (stat headings)*/
+    
+ }
+ /*css...*/
+ * ,::after, ::before{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+
+} 
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background: var(--VeryDarkBlue);
+}
+.biggerContainer{
+    width:85%;
+    display: flex;
+    margin:100px auto;
+}
+.txtcontainer{
+     background:var(--DarkDesaturatedBlue);
+     color:var(--White);
+     width:50%;
+     padding-top: 3rem;
+     border-radius: 8px 0  0 8px;
+}
+h1{
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 1.5rem;
+}
+.purpleWord{
+    color:var(--SoftViolet)
+}
+p{
+    color:var(--SlightlyTransparentWhiteMain);
+    width:90%;
+}
+.container{
+    width:80%;
+    margin:auto;
+}
+.infos{
+    display: flex;
+    width:80%;
+    margin:auto;
+    padding-bottom: 3rem;
+    font-size: 30;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.word{
+    color:var(--SlightlyTransparentWhite);
+}
+.numbers{
+    font-size:25px;
+}
+.imagie{
+    width:50%;
+    min-height: 30vh;
+    background-image: url('images/image-header-desktop.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color:var(--SoftViolet);
+    background-blend-mode:multiply;
+    border-radius:0 8px 8px 0;
+   }
+/*MediaQuery*/
+@media only screen and (max-width:700px){
+    .biggerContainer{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width:90%;
+        flex-direction: column-reverse;
+    }
+    h1{
+        font-size: 25px;
+    }
+    p{
+        font-size:13px;
+    }
+    .txtcontainer{
+        width:100%;
+    }
+    .imagie{
+        width:100%;
+        border-radius:8px 8px 0 0;
+    }
+}
+@media only screen and (max-width:375px){
+    .txtcontainer{
+        border-radius:0 0 8px 8px;
+        text-align: center;
+    }
+    .imagie{
+        min-height: 40vh;
+        background:url(images/image-header-mobile.jpg);
+        background-color:var(--SoftViolet);
+        background-blend-mode:multiply;
+        background-size: cover;
+        background-position: top;
+
+        }
+    .infos{
+        margin-top: 10px;
+        display: block;
+    }
+    .info{
+        margin-bottom:20px;
+    }
+}
