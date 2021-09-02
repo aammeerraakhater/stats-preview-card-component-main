@@ -18,7 +18,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: (https://6fxzvpvt0r66jj5ecjusug-on.drv.tw/WEB--Frontend%20Mentor/stats-preview-card-component-main/)
+- Solution URL:https://aammeerraakhater.github.io/stats-preview-card-component-main/
 
 ### Built with
 
