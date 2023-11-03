@@ -1,4 +1,5 @@
 # Frontend Mentor - Stats preview card component solution
+![image](https://github.com/aammeerraakhater/stats-preview-card-component-main/assets/65508978/b1e13fff-a94b-4672-b665-e035db42632e)
 
 This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62).
 
